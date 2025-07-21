@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.4.4](https://github.com/Vatsim-Scandinavia/discord-bot/compare/v2.4.3...v2.4.4) (2025-07-21)
+
+
+### Bug Fixes
+
+* bump required Python version to 3.13 or greater ([#163](https://github.com/Vatsim-Scandinavia/discord-bot/issues/163)) ([3ab9b30](https://github.com/Vatsim-Scandinavia/discord-bot/commit/3ab9b308d4efa2afcfbbe66f1f5fb0e4ea7827c1))
+
+
+### Documentation
+
+* add myself ([#165](https://github.com/Vatsim-Scandinavia/discord-bot/issues/165)) ([c4f697e](https://github.com/Vatsim-Scandinavia/discord-bot/commit/c4f697e5273e20026cfcd3ec21c56e31553ed4b0))
+
 ## [2.4.3](https://github.com/Vatsim-Scandinavia/discord-bot/compare/v2.4.2...v2.4.3) (2025-07-19)
 
 
