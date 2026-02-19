@@ -49,14 +49,18 @@ jobs:
           labels: ${{ steps.meta.outputs.labels }}
           platforms: ${{ env.TARGET_PLATFORMS }}
 
-  lint-ruff:
+  lint:
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        task: [lint:format, lint:code]
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
-      - name: Lint Python
-        uses: astral-sh/ruff-action@v3
+      - name: Install mise
+        uses: jdx/mise-action@v2
 
-      - name: Check formatting
-        run: ruff format --check
+      - name: Run ${{ matrix.task }}
+        run: mise run ${{ matrix.task }}
